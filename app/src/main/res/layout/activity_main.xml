@@ -14,6 +14,8 @@
         android:background="#efefef"
         android:textSize="40sp"
         android:maxLength="12"
+        android:padding="10dp"
+        android:gravity="right|center_vertical|bottom"
         />
 
     <!-- Row 1 -->
