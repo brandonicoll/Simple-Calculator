@@ -36,6 +36,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun removeZero(result: String) : String {
+        var value = result
+        if (result.contains(".0")) {
+            value = result.substring(0, result.length-2) //starts at normal index but cuts off last two characters
+        }
+        return value
+    }
+
+
     fun onOperator(view: View) {
         if (lastNumeric && !isOperatorAdded(tvInput.text.toString())){
             tvInput.append((view as Button).text)
@@ -76,7 +85,45 @@ class MainActivity : AppCompatActivity() {
                         one = prefix + one
                     }
 
-                    tvInput.text = (one.toDouble() - two.toDouble()).toString()
+                    tvInput.text = removeZero((one.toDouble() - two.toDouble()).toString())
+                }
+
+                else if(tvValue.contains("+")) {
+
+                    val splitValue = tvValue.split("+") //acts like a array with the split values
+                    var one = splitValue[0] //position 1
+                    var two = splitValue[1] //position 2
+
+                    if (!prefix.isEmpty()){ //adding the prefix of - back to the position 1 -- AFTER THE SPLIT
+                        one = prefix + one
+                    }
+
+                    tvInput.text = removeZero((one.toDouble() + two.toDouble()).toString())
+                }
+
+                else if(tvValue.contains("*")) {
+
+                    val splitValue = tvValue.split("*") //acts like a array with the split values
+                    var one = splitValue[0] //position 1
+                    var two = splitValue[1] //position 2
+
+                    if (!prefix.isEmpty()){ //adding the prefix of - back to the position 1 -- AFTER THE SPLIT
+                        one = prefix + one
+                    }
+
+                    tvInput.text = removeZero((one.toDouble() * two.toDouble()).toString())
+                }
+                else if(tvValue.contains("/")) {
+
+                    val splitValue = tvValue.split("/") //acts like a array with the split values
+                    var one = splitValue[0] //position 1
+                    var two = splitValue[1] //position 2
+
+                    if (!prefix.isEmpty()){ //adding the prefix of - back to the position 1 -- AFTER THE SPLIT
+                        one = prefix + one
+                    }
+
+                    tvInput.text = removeZero((one.toDouble() / two.toDouble()).toString())
                 }
 
 
