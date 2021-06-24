@@ -31,28 +31,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="7"
+            android:text="@string/_7"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnEight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="8"
+            android:text="@string/_8"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnNine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="9"
+            android:text="@string/_9"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="/"
+            android:text="@string/slash"
             android:onClick="onOperator"/>
 
 
@@ -71,28 +71,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="4"
+            android:text="@string/_4"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnFive"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="5"
+            android:text="@string/_5"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnSix"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="6"
+            android:text="@string/_6"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnMultiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="*"
+            android:text="@string/star"
             android:onClick="onOperator"/>
 
 
@@ -111,28 +111,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="1"
+            android:text="@string/_1"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnTwo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2"
+            android:text="@string/_2"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnThree"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="3"
+            android:text="@string/_3"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnSubtract"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-"
+            android:text="@string/minus"
             android:onClick="onOperator"/>
 
 
@@ -151,28 +151,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="."
+            android:text="@string/dot"
             android:onClick="onDecimalPoint"/>
         <android.widget.Button
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0"
+            android:text="@string/_0"
             android:onClick="onDigit"/>
         <android.widget.Button
             android:id="@+id/btnClear"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="CLR"
+            android:text="@string/clr"
             android:onClick="onClear"/>
         <android.widget.Button
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+"
+            android:text="@string/plus"
             android:onClick="onOperator"/>
 
 
@@ -192,7 +192,7 @@
             android:id="@+id/btnEqual"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="="
+            android:text="@string/equal"
             android:onClick="onEqual"
             />
 
